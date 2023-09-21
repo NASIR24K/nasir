@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./src/css/about.css">
     <link rel="stylesheet" href="./src/css/footer.css">
 
@@ -57,7 +57,10 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-md-12 col-lg-12 col-sm-12">
-                <div class="about-image text-center">
+                <div class="about-image text-center"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <img src="./src/images/01725874024.png" class="img-responsive center-block rounded-circle" alt="Your Image">
                 </div>
                 <div class="auto_text mb-4">
@@ -70,7 +73,10 @@
         <div class="untree_co-section count-numbers py-5">
             <div class="container bg-white">
                 <div class="row">
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"
+                    data-aos="fade-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div class="counter-wrap">
                             <div class="counter">
                                 <span class="" data-number="20">20+</span>
@@ -78,7 +84,10 @@
                             <span class="caption">No. of Project</span>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 "
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div class="counter-wrap">
                             <div class="counter">
                                 <span class="" data-number="25">25</span>
@@ -86,7 +95,10 @@
                             <span class="caption">No. of Clients</span>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div class="counter-wrap">
                             <div class="counter">
                                 <span class="" data-number="2">2</span>
@@ -94,7 +106,10 @@
                             <span class="caption">No. of Employees</span>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3"
+                    data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div class="counter-wrap">
                             <div class="counter">
                                 <span class="" data-number="120">120</span>
@@ -398,10 +413,10 @@
         </div>
       </div>
       <div class="row sub-contact">
-        <div class="col-lg-6 col-md-6 col-sm-12 maps" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-lg-6 col-md-6 col-sm-12 maps" data-aos="fade-right" data-aos-duration="3000">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3704441887126!2d90.38979081402586!3d23.876479289867174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c415dabf6e4d%3A0xb9fa0b309dbe4785!2sUttara%20Sector%2011%20Park!5e0!3m2!1sen!2sbd!4v1675608034273!5m2!1sen!2sbd"></iframe>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 contact-form" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-lg-6 col-md-6 col-sm-12 contact-form" data-aos="fade-left" data-aos-duration="3000">
           <fieldset class="border p-4">
             <legend class="float-none w-auto">Get in touch</legend>
             <form>
@@ -553,6 +568,10 @@
     <!-- Footer Section -->     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Auto text multiple javascript 
     <script>
       const text = document.querySelector(".sec-text");
