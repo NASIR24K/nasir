@@ -1,0 +1,356 @@
+
+/* Set a background color for the body */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+.container-fluid {
+  padding: 20px;
+  box-shadow: 0 0 10px #0000001a;
+
+}
+/* Style the "blog-details" container */
+.blog-details {
+  background-color: #f9f9f9; /* Background color (e.g., light gray) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  padding: 20px; /* Padding inside the container */
+  margin: 20px 0; /* Margin above and below the container */
+}
+
+/* Center-align the content within the "blog-details" container */
+.blog-details .content {
+  text-align: left;
+}
+/* Style the link */
+.content h1 a {
+  text-decoration: none; /* Remove the default underline */
+  color: #007bff; /* Link color (e.g., blue) */
+  transition: text-decoration 0.3s; /* Smooth underline transition on hover */
+}
+
+/* Add underline to the link on hover */
+.content h1 a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/* Style the acronyms (User Label Name and Date Label Date Show) */
+/* Style the container */
+.content-quote {
+  padding: 10px; /* Add padding to the container */
+  border-right: 3px solid #007bff; /* Right-side border color (e.g., blue) */
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1); /* Right-side shadow */
+  background-color: #f9f9f9; /* Background color for the container (e.g., light gray) */
+  margin: 10px 0; /* Add margin above and below the container */
+}
+
+/* Style the paragraph text */
+.content-quote p {
+  margin: 0; /* Remove default margin for paragraphs */
+  color: #333; /* Text color for paragraphs */
+}
+
+/* Style the right-side border for the "blog-details" container */
+.blog-details::after {
+  content: "";
+  display: block;
+  border-right: 3px solid #007bff; /* Right-side border color (e.g., blue) */
+  height: 100%; /* Full height of the container */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Style the blog title link */
+.blog-details h1 a {
+  color: #007bff; /* Link color (e.g., blue) */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Style the acronyms (User Label Name and Date Label Date Show) */
+.blog-details acronym {
+  display: block;
+  margin-top: 10px;
+  color: #333; /* Text color for acronyms */
+}
+
+/* Style the icons within the acronyms */
+.blog-details acronym i {
+  margin-right: 5px; /* Spacing between icon and text */
+  color: #007bff; /* Icon color (e.g., blue) */
+}
+
+/* Style the cover image */
+.blog-details img {
+  max-width: 100%; /* Make sure the image does not exceed its container */
+}
+
+/* Style the block content */
+.blog-details .block-content {
+  margin-top: 20px; /* Spacing above each block content */
+}
+
+/* Style the block heading */
+.blog-details .block-heading {
+  font-size: 18px; /* Font size for block headings */
+  font-weight: bold; /* Bold font for block headings */
+  margin-bottom: 10px; /* Spacing below block headings */
+}
+
+/* Style the block quote */
+.blog-details .block-quote {
+  font-size: 14px; /* Font size for block quotes */
+  margin-bottom: 10px; /* Spacing below block quotes */
+  color: #333; /* Text color for block quotes */
+}
+
+/* Style the paragraphs */
+.blog-details .content p {
+  margin-bottom: 10px; /* Spacing below paragraphs */
+  color: #333; /* Text color for paragraphs */
+}
+
+/* Style the back button */
+/* Style the "back" container */
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Background color (e.g., blue) */
+  color: #fff; /* Text color (e.g., white) */
+  padding: 10px; /* Padding inside the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Style the icon */
+.back i {
+  margin-right: 5px; /* Add spacing between the icon and text */
+}
+
+/* Style the hover effect for the icon */
+.back i:hover {
+  color: #ff6347; /* New color on hover (e.g., red) */
+}
+/* Style the comments-post container */
+.comments-post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the heading-comment */
+.heading-comment {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Style the reply-comment list */
+.reply-comment {
+  list-style: none; /* Remove list bullets */
+  margin: 0; /* Remove default list margin */
+  padding: 0; /* Remove default list padding */
+}
+
+/* Style list items within reply-comment */
+.reply-comment li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Style the user icon */
+.reply-comment li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style the Name label */
+.reply-comment li label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style the Date acronym */
+.reply-comment li acronym {
+  color: #888;
+  margin-right: 10px;
+}
+
+/* Style the Reply link */
+.reply-comment li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Style the Reply link on hover */
+.reply-comment li a:hover {
+  text-decoration: underline;
+}
+
+/* Style the comment form */
+.comment-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.comment-form label {
+  font-weight: bold;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-form textarea {
+  height: 100px;
+}
+
+.comment-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Style the sidebar area */
+.sidebar-area {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+/* Style the search bar container */
+.searchbar {
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+
+/* Style the label for the search input */
+.searchbar label {
+  padding-top: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the search input field */
+.searchbar input[type="text"] {
+  flex: 1; /* Allow the input to expand and take available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the search button */
+.searchbar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Style the search icon inside the button */
+.searchbar button i {
+  padding-top: 5px;
+  margin-left: 4px;
+}
+
+/* Style the latest and recent posts */
+.latest-post, .recent-post {
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 4px 10px #0000001a;
+  margin-bottom: 20px;
+}
+
+.latest-post h2, .recent-post h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.latest-post ul, .recent-post ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.latest-post ul li, .recent-post ul li {
+  margin-bottom: 10px;
+}
+
+.latest-post ul li i, .recent-post ul li i {
+  margin-right: 5px;
+}
+/* Style the "recent-tag" container */
+.recent-tag {
+  background-color: #f9f9f9;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+/* Style the heading */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the button group */
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style the individual buttons */
+.btn-primary {
+  background-color: #007bff; /* Background color (e.g., blue) */
+  color: #fff; /* Text color (white) */
+  border: none; /* Remove the border */
+  margin: 5px; /* Add some spacing between buttons */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+/* Change background color on hover */
+.btn-primary:hover {
+  background-color: #ff6347; /* Hover background color (e.g., red) */
+}

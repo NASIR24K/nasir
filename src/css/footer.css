@@ -1,0 +1,131 @@
+
+/* Footer section styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+/* Social media section styles */
+footer .social-media {
+    background-color: #00000033;
+    padding: 20px 0;
+    
+}
+
+footer .social-media span {
+    font-weight: bold;
+}
+
+footer .social-media a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    
+}
+
+/* Links section styles */
+footer .useful-links h6 {
+    font-weight: bold;
+    color: #7c4dff;
+}
+
+footer .useful-links a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Contact info section styles */
+footer .contact-info h6 {
+    font-weight: bold;
+    color: #7c4dff;
+}
+
+footer .contact-info p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Copyright section styles */
+footer .copyright {
+    background-color: #00000033;
+    padding: 15px 0;
+    color: #333;
+}
+
+footer .copyright a {
+    color: #7c4dff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style for the footer container */
+.content {
+    background-color: #f8f8f8; /* Background color for the container */
+    padding: 40px 0; /* Add padding to the top and bottom of the container */
+    font-family: Arial, sans-serif; /* Set the font family */
+  }
+  
+  /* Style for the headings */
+  h6 {
+    color: #7c4dff; /* Text color for headings */
+    font-weight: bold; /* Bold text for headings */
+  }
+  
+  /* Style for the horizontal lines */
+  hr {
+    background-color: #7c4dff; /* Color of the horizontal lines */
+    height: 2px; /* Thickness of the lines */
+    border: none; /* Remove the default border */
+  }
+  
+  /* Style for the paragraph text */
+  p {
+    color: #333; /* Text color for paragraphs */
+  }
+  
+  /* Style for links */
+  .text-dark a {
+    color: #000; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Style for link hover */
+  .text-dark a:hover {
+    color: #fff; /* Link hover color */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Style for icons in contact section */
+  i.fas {
+    color: #7c4dff; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  i.fas:hover {
+    color: #000; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  /* Additional styling for the larger screens */
+  @media (min-width: 768px) {
+    /* Center the text in larger screens */
+    .container.text-md-start {
+      text-align: center;
+    }
+  }
+  
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    footer .social-media {
+        text-align: center;
+    }
+
+    footer .useful-links {
+        text-align: center;
+    }
+
+    footer .contact-info {
+        text-align: center;
+    }
+}

@@ -1,0 +1,82 @@
+/* Custom CSS for the Blog Section */
+.blog-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .blogs {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; /* Ensure full width */
+  }
+ 
+  .blogs_1 {
+    position: absolute; /* Reset the position to relative for this element */
+     margin-top: -130px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0px 4px 6px #0000001a;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .card-title:hover {
+    color: #007bff;
+  }
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .card-text a {
+    text-decoration: none;
+  }
+  
+  .card-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .text-muted {
+    font-size: 0.875rem;
+    color: #777;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-link {
+    color: #007bff;
+    border: 1px solid #007bff;
+    margin: 0 5px;
+  }
+  
+  .page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+  }
+  .zoomed {
+    transform: scale(1.5);
+    z-index: 1;
+}

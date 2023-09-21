@@ -1,0 +1,486 @@
+/*ding: 0;
+  }
+    /* Styles for individual services */
+    h1.resizable-border {
+      position: relative;
+      text-align: center;
+      }
+      h1.resizable-border::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 48%;
+      width: 5%;
+      height: 7px; /* Adjust the height of the border here */
+      background-color:  #007bff;  /* Adjust the color of the border here */
+      cursor: row-resize;
+      text-align: left;
+      pointer-events: none;
+      }
+/* Styles for the hero section */
+.container-fluid.hero {
+    background-color: #fff; /* Set your desired background color */
+    padding: 100px 0; /* Adjust the padding as needed */
+  }
+  
+  /* Styles for the left-header column */
+  .left-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .left-header .contents {
+    overflow: hidden;
+  }
+.contents .text{
+    position: relative;
+    color:#007bff;
+    font-size: 36px;
+    font-weight: 700;
+}
+.contents .text.first-text{
+   color: #000;
+}
+.text.sec-text::before,
+.text.sec-text::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+
+}
+.right-header {
+  position: relative;
+  text-align: center;
+}
+
+.right-header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 4px;
+  margin-bottom: 15px; /* Adjust as needed for spacing */
+}
+
+.right-header .btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+}
+
+.right-header .btn:first-child {
+  top: -30px;
+}
+
+.right-header .btn:last-child {
+  bottom: 0;
+}
+
+/* End service */
+  .service {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    text-align: center  ;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .service:hover {
+    background-color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .service-icon:hover {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+    /* Custom CSS for Gallery */
+.gallery {
+  margin-top: 20px;
+}
+
+.filter-button-group {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  display: inline-block;
+  margin: 0px;
+  padding: 8px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0056b3;
+}
+
+.img-thumb {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.img-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px;
+}
+.galleryImg{
+padding: 5px;
+margin: 0px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .galleryImg {
+      flex-basis: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .galleryImg {
+      flex-basis: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-button-group {
+      text-align: center;
+  }
+  
+  .filter-btn {
+      margin: 5px 10px;
+  }
+}
+/* Style for the resume container */
+.resume{
+  padding: 20px;
+}
+
+/* Style for section headings */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for the accordion items */
+.accordion-item {
+  margin-bottom: 15px;
+}
+
+/* Style for the accordion buttons */
+.accordion-button {
+  background-color: #f8f9fa; /* Light gray background color */
+  color: #333; /* Text color */
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the active accordion button */
+.accordion-button[aria-expanded="true"] {
+  background-color: #000; /* Blue background color for active button */
+  color: #fff; /* White text color for active button */
+}
+
+/* Style for the accordion content */
+.accordion-body {
+  background-color: #fff; /* White background color */
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 0;
+  padding: 15px;
+  margin-top: -1px; /* Offset border to create seamless transition */
+  transition: all 0.3s ease;
+}
+
+/* Style for the address element within accordion content */
+address {
+  font-style: normal;
+  margin-top: 10px;
+}
+
+/* Style for muted text within accordion content */
+.text-muted {
+  color: #888; /* Gray text color */
+}
+
+/* Additional custom styles for specific elements */
+/* You can customize these further as needed */
+
+/* Style for the timeline item year (e.g., "2017-2021") */
+.accordion-button::after {
+  content: ''; /* Add content using CSS pseudo-element */
+  display: block;
+  clear: both;
+}
+
+/* Style for the university/project name within accordion content */
+.accordion-body h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Style for the text within accordion content */
+.accordion-body p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Style for the span element containing university/company name */
+.accordion-body span {
+  display: block;
+  font-size: 20px;
+  margin-top: 15px;
+  color: #000; /* Blue color for university/company name */
+}
+
+/* Style for the accordion content when expanded */
+.accordion-button[aria-expanded="true"] + .accordion-collapse .accordion-body {
+  border-top: 1px solid #ddd;
+}
+
+/* Hover effect for accordion buttons */
+.accordion-button:hover {
+  background-color: #ddd; /* Light gray background color on hover */
+  color: #333; /* Text color on hover */
+}
+
+/* Skills Section Styles */
+.skills {
+  background-color: #f8f9fa; /* Set your desired background color */
+  padding: 50px 0; /* Adjust the padding as needed */
+}
+
+.skills h1 {
+  font-size: 36px; /* Adjust the font size as needed */
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills .col-lg-6 {
+  flex-basis: calc(50% - 30px); /* Adjust the width and margin as needed */
+  margin: 0 15px;
+}
+
+.skills .mb-4 {
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.skills label {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .progress {
+  height: 20px; /* Adjust the height as needed */
+  margin-top: 5px; /* Adjust the margin as needed */
+}
+
+.skills .progress-bar {
+  border-radius: 5px;
+  background-color: #007bff;
+}
+
+/* Keyframes animation for percentage */
+@keyframes fillPercentage {
+  0% {
+    width: 0;
+  }
+}
+
+/* Apply the animation to the progress bars */
+.progress-bar {
+  animation: fillPercentage 2s ease-out forwards;
+}
+
+/* Custom property to define the width based on the percentage value */
+:root {
+  --progress-value-htmlCss: 0%;
+  --progress-value-bootstrap: 0%;
+  --progress-value-tailwindReact: 0%;
+  --progress-value-javascript: 0%;
+  --progress-value-github: 0%;
+  --progress-value-jqueryAjax: 0%;
+  --progress-value-php: 0%;
+  --progress-value-laravel: 0%;
+}
+
+/* Update the --progress-value custom property for each progress bar */
+#htmlCss {
+  --progress-value-htmlCss: 95%;
+}
+
+#bootstrap {
+  --progress-value-bootstrap: 85%;
+}
+
+#tailwindReact {
+  --progress-value-tailwindReact: 65%;
+}
+
+#javascript {
+  --progress-value-javascript: 80%;
+}
+
+#github {
+  --progress-value-github: 80%;
+}
+
+#jqueryAjax {
+  --progress-value-jqueryAjax: 85%;
+}
+
+#php {
+  --progress-value-php: 80%;
+}
+
+#laravel {
+  --progress-value-laravel: 75%;
+}
+
+
+/* Testimonial Item Styles */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  max-width: 100px; /* Adjust the size as needed */
+  height: auto;
+  border: 3px solid #007bff; /* Add a border around the circle */
+}
+
+.testimonial h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Indicator Styles */
+.carousel-indicators {
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.carousel-indicators li {
+  background-color: #007bff; /* Default indicator color */
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators li.active {
+  background-color: #28a745; /* Active indicator color */
+}
+
+/* Add hover effect */
+.carousel-indicators li:hover {
+  background-color: #dc3545; /* Hovered indicator color */
+}
+
+/* Dot Navigation Styles */
+.carousel-dot-navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-dot-navigation span {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-color: #007bff; /* Dot color */
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dot-navigation .active {
+  background-color: #007bff; /* Active dot color */
+}
+
+/* Change the color of the dots on hover */
+.carousel-dot-navigation span:hover {
+  background-color: #dc3545; /* Hovered dot color */
+}
+
+/* Change the color of the icons */
+.icons {
+    color: #7c4dff; /* Change the color to your desired color */
+}
+
+/* Add a hover effect to the icons */
+.icons:hover {
+    color: #000; /* Change the hover color to your desired color */
+}
+
+/* Adjust margin-right for the icons */
+.icons {
+    margin-right: 20px; /* Add margin-right as per your preference */
+}
+
+/* Adjust padding for the contact information */
+.contact-info {
+    padding: 10px; /* Add padding as per your preference */
+}

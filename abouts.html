@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS if needed -->
+    <style>
+        /* Custom CSS for styling the counters and captions */
+
+.counter-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.counter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.caption {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Add more custom styles as needed */
+
+    </style>
+</head>
+<body>
+    <div class="untree_co-section count-numbers py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="9313">9,313</span>
+                        </div>
+                        <span class="caption">No. of Travels</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="8492">8,492</span>
+                        </div>
+                        <span class="caption">No. of Clients</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="100">100</span>
+                        </div>
+                        <span class="caption">No. of Employees</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="counter-wrap">
+                        <div class="counter">
+                            <span class="" data-number="120">120</span>
+                        </div>
+                        <span class="caption">No. of Countries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap and jQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Add your custom JavaScript if needed -->
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    var counterElements = document.querySelectorAll('.counter span');
+
+    counterElements.forEach(function (counter) {
+        var target = parseInt(counter.getAttribute('data-number'));
+        var duration = 2000; // Change this value to adjust the animation speed
+        var interval = 10; // Interval for updating the counter
+        var step = (target / duration) * interval;
+        var current = 0;
+
+        var counterInterval = setInterval(function () {
+            if (current >= target) {
+                clearInterval(counterInterval);
+                current = target;
+            } else {
+                current += step;
+            }
+
+            counter.textContent = Math.ceil(current);
+
+            if (current === target) {
+                clearInterval(counterInterval);
+            }
+        }, interval);
+    });
+});
+
+    </script>
+</body>
+</html>
